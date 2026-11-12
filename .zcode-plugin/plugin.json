@@ -1,0 +1,39 @@
+{
+  "name": "astryx",
+  "displayName": "Astryx 设计系统",
+  "displayName_i18n": {
+    "en": "Astryx Design System",
+    "zh-CN": "Astryx 设计系统"
+  },
+  "version": "0.1.0",
+  "description": "Astryx design-system toolkit for ZCode: a read-only MCP server over the astryx CLI (search, component APIs, docs, templates, themes), a /astryx build command, and the astryx skill with version discipline and delivery checks.",
+  "description_i18n": {
+    "en": "Astryx design-system toolkit: read-only MCP tools over the astryx CLI, a /astryx command, and the astryx skill.",
+    "zh-CN": "【前端设计系统】Astryx 工具箱：把 astryx CLI 封装为只读 MCP 工具（组件检索/API/文档/模板/主题），附 /astryx 构建命令与 astryx 技能（版本纪律、交付校验）。"
+  },
+  "author": {
+    "name": "mojun"
+  },
+  "keywords": [
+    "astryx",
+    "design-system",
+    "react",
+    "stylex",
+    "mcp",
+    "ui",
+    "设计系统",
+    "组件库"
+  ],
+  "skills": "skills",
+  "commands": "commands",
+  "mcpServers": {
+    "astryx": {
+      "command": "node",
+      "args": ["${ZCODE_PLUGIN_ROOT}/mcp/server.mjs"],
+      "cwd": "${ZCODE_PROJECT_DIR}",
+      "env": {
+        "ASTRYX_CLI_VERSION": "0.7.14"
+      }
+    }
+  }
+}
