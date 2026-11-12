@@ -70,7 +70,7 @@ Seven prebuilt themes ship (neutral, butter, chocolate, matcha, stone, gothic, y
 
 ## ZCode notes
 
-- Two carriers exist: this standalone skill (`~/.zcode/skills/astryx/`) and the `astryx` ZCode plugin (`skills/` + `/astryx` command + read-only MCP tools). If the plugin is installed, its copy and MCP tools are canonical; this file is the fallback.
+- Two carriers exist: a standalone user-level skill (`~/.zcode/skills/astryx/`) and this ZCode plugin (`skills/` + `/astryx` command + read-only MCP tools). If the plugin is installed, its copy and MCP tools are canonical; the standalone skill is the fallback.
 - Astryx's own `astryx init --user` writes `~/.agents/skills/astryx/SKILL.md` and links it into Claude/Kiro/etc., not `~/.zcode`. If that file exists, its `search → component/docs` workflow is canonical; this skill adds the flags, version discipline, and delivery checks.
 - If `astryx` is missing, install it once: `npm i -g @astryxdesign/cli`, or keep using the pinned `npx` form.
 
